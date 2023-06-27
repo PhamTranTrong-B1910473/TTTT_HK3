@@ -6,16 +6,19 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="about-left">
-                        <div class="about-title align-left">
-                            <span class="wow fadeInDown" data-wow-delay=".2s">About Our University</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Welcome to our campus</h2>
-                            <p class="wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad min im veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</p>
-                            <p class="qote wow fadeInUp" data-wow-delay=".8s">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, do eius mod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div class="button wow fadeInUp" data-wow-delay="1s">
+                    <div class="about-title align-left">
+                            <span class="wow fadeInDown" data-wow-delay=".2s">Giới Thiệu Về Bộ Môn Tin Học</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Chào Mừng Đến Với Bộ Môn Tin Học</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Bộ môn Tin học đã trở thành một lĩnh vực 
+                                vô cùng quan trọng và phát triển mạnh mẽ trong thời đại công nghệ thông tin hiện nay. 
+                                Tin học không chỉ là một bộ môn học thuật mà còn là một ngành nghề đáng chú ý với nhiều 
+                                cơ hội nghề nghiệp hấp dẫn. Bằng cách sử dụng các công nghệ và phương pháp tính toán, 
+                                tin học giúp chúng ta giải quyết các vấn đề phức tạp từ việc phân tích dữ liệu đến phát triển 
+                                ứng dụng và hệ thống thông tin..</p>
+                            <p class="qote wow fadeInUp" data-wow-delay=".8s">Tin học không chỉ cung cấp kiến thức chuyên môn 
+                                mà còn phát triển kỹ năng tư duy logic, phân tích và giải quyết vấn đề. Qua việc tìm hiểu 
+                                và thực hành, sinh viên được rèn luyện khả năng tạo ra các giải pháp sáng tạo và hiệu quả</p>
+                                <div class="button wow fadeInUp" data-wow-delay="1s">
                                 <a href="about-us.html" class="btn">Read More</a>
                                 <a href="https://www.youtube.com/watch?v=RXAjuM1gGTE"
                                     class="glightbox video btn"> Play Video<i class="lni lni-play"></i></a>
@@ -25,7 +28,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="about-right wow fadeInRight" data-wow-delay=".4s">
-                        <img src="assets/images/about/about-img2.png" alt="#">
+                        <img src="{{url('images/about/about-img1.png')}}" alt="#">
                     </div>
                 </div>
             </div>
@@ -33,8 +36,8 @@
     </section>
     <!-- /End About Us Area -->
 
-    <!-- Start Courses Area -->
-    <section class="courses section">
+ <!-- Start Courses Area -->
+ <section class="courses section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -42,9 +45,8 @@
                         <div class="section-icon wow zoomIn" data-wow-delay=".4s">
                             <i class="lni lni-graduation"></i>
                         </div>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Featured Courses</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
-                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Các Khoá Học Nổi Bật</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Dưới đây là một số khoá học về tin học đại cương của bộ môn Tin Học.</p>
                     </div>
                 </div>
             </div>
@@ -54,16 +56,16 @@
                         <!-- Start Single Course -->
                         <div class="single-course wow fadeInUp" data-wow-delay=".2s">
                             <div class="course-image">
-                                <a href="course-details.html"><img src="assets/images/courses/courses-1.jpg"
+                                <a href="course-details.html"><img src="{{url('images/courses/courses-1.jpg')}}"
                                         alt="#"></a>
-                                <p class="price">$180</p>
+                                <!-- <p class="price">$180</p> -->
                             </div>
                             <div class="content">
-                                <h3><a href="course-details.html">Computer Science</a></h3>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    laborum.</p>
+                                <h3 class="edit_p"><a class="edit_a" href="course-details.html">Phần 1: Hệ Thống Thông Tin</a></h3>
+                                <p class="edit_p">Hệ thống thông tin là một hệ thống bao gồm các yếu tố có quan hệ với nhau cùng làm 
+                                    nhiệm vụ thu thập, xử lý, lưu trữ và phân phối thông tin và dữ liệu và cung cấp một cơ chế phản hồi để đạt được một mục tiêu định trước.</p>
                             </div>
-                            <div class="bottom-content">
+                            <!-- <div class="bottom-content">
                                 <ul class="review">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -76,7 +78,7 @@
                                     <i class="lni lni-tag"></i>
                                     <a href="javascript:void(0)">Programming</a>
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- End Single Course -->
                     </div>
@@ -84,16 +86,17 @@
                         <!-- Start Single Course -->
                         <div class="single-course wow fadeInUp" data-wow-delay=".4s">
                             <div class="course-image">
-                                <a href="course-details.html"><img src="assets/images/courses/courses-2.jpg"
+                                <a href="course-details.html"><img src="{{url('images/courses/courses-2.jpg')}}"
                                         alt="#"></a>
-                                <p class="price">$200</p>
+                                <!-- <p class="price">$200</p> -->
                             </div>
                             <div class="content">
-                                <h3><a href="course-details.html">Business Management</a></h3>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    laborum.</p>
+                                <h3 ><a class="edit_a" href="course-details.html">Phần 2: Cấu Trúc Tổng Quát Hệ Thống Máy Tính</a></h3>
+                                <p class="edit_p">Tổng quan về cấu trúc máy tính, mô hình máy Turing, 
+                                    nguyên lý Von Neumann, sơ đồ tổng quát của một máy tính, 
+                                    nguyên lý hoạt động của máy tính</p>
                             </div>
-                            <div class="bottom-content">
+                            <!-- <div class="bottom-content">
                                 <ul class="review">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -106,7 +109,7 @@
                                     <i class="lni lni-tag"></i>
                                     <a href="javascript:void(0)">Business</a>
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- End Single Course -->
                     </div>
@@ -114,16 +117,17 @@
                         <!-- Start Single Course -->
                         <div class="single-course wow fadeInUp" data-wow-delay=".6s">
                             <div class="course-image">
-                                <a href="course-details.html"><img src="assets/images/courses/courses-3.jpg"
+                                <a href="course-details.html"><img src="{{url('images/courses/courses-3.jpg')}}"
                                         alt="#"></a>
-                                <p class="price">Free</p>
+                                <!-- <p class="price">Free</p> -->
                             </div>
                             <div class="content">
-                                <h3><a href="course-details.html">Java Online Course</a></h3>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    laborum.</p>
+                                <h3><a class="edit_a" href="course-details.html">Phần 3: HĐH Windows</a></h3>
+                                <p class="edit_p">Hệ điều hành Windowscó tên đầy đủ là Microsoft Windows, 
+                                    hay có thể gọi đơn giản là Windows. Hệ điều hành này được phát
+                                     triển và phân phối bởi “ông lớn” ngành công nghệ là Microsoft.</p>
                             </div>
-                            <div class="bottom-content">
+                            <!-- <div class="bottom-content">
                                 <ul class="review">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -136,7 +140,7 @@
                                     <i class="lni lni-tag"></i>
                                     <a href="javascript:void(0)">Programming</a>
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- End Single Course -->
                     </div>
@@ -144,16 +148,18 @@
                         <!-- Start Single Course -->
                         <div class="single-course wow fadeInUp" data-wow-delay=".2s">
                             <div class="course-image">
-                                <a href="course-details.html"><img src="assets/images/courses/courses-4.jpg"
+                                <a href="course-details.html"><img src="{{url('images/courses/courses-4.jpg')}}"
                                         alt="#"></a>
-                                <p class="price">$299</p>
+                                <!-- <p class="price">$299</p> -->
                             </div>
                             <div class="content">
-                                <h3><a href="course-details.html">Electrical Engineering</a></h3>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    laborum.</p>
+                                <h3><a class="edit_a" href="course-details.html">Phần 4: Internet</a></h3>
+                                <p class="edit_p">Internet là hệ thống thông tin toàn cầu. Với chức năng chính là truyền thông 
+                                    tin theo kiểu nối chuyển gói dữ liệu dựa trên một giao thức liên mạng đã được 
+                                    chuẩn hóa. Internet giúp kết nối hàng tỷ máy tính, thiết bị điện tử thông
+                                     minh khác nhau.</p>
                             </div>
-                            <div class="bottom-content">
+                            <!-- <div class="bottom-content">
                                 <ul class="review">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -166,7 +172,7 @@
                                     <i class="lni lni-tag"></i>
                                     <a href="javascript:void(0)">Science</a>
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- End Single Course -->
                     </div>
@@ -174,16 +180,17 @@
                         <!-- Start Single Course -->
                         <div class="single-course wow fadeInUp" data-wow-delay=".4s">
                             <div class="course-image">
-                                <a href="course-details.html"><img src="assets/images/courses/courses-5.jpg"
+                                <a href="course-details.html"><img src="{{url('images/courses/courses-5.jpg')}}"
                                         alt="#"></a>
-                                <p class="price">$150</p>
+                                <!-- <p class="price">$150</p> -->
                             </div>
                             <div class="content">
-                                <h3><a href="course-details.html">Architecture Design</a></h3>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    laborum.</p>
+                                <h3><a class="edit_a" href="course-details.html">Phần 5: Microsoft Word</a></h3>
+                                <p class="edit_p">Microsoft Word, còn được biết đến với tên khác là Word, là một chương trình soạn 
+                                    thảo văn bản phổ biển hiện nay của công ty phần mềm nổi tiếng Microsoft. 
+                                    Nó cho phép người dùng làm việc với văn bản thô .</p>
                             </div>
-                            <div class="bottom-content">
+                            <!-- <div class="bottom-content">
                                 <ul class="review">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -196,7 +203,7 @@
                                     <i class="lni lni-tag"></i>
                                     <a href="javascript:void(0)">Design</a>
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- End Single Course -->
                     </div>
@@ -204,16 +211,17 @@
                         <!-- Start Single Course -->
                         <div class="single-course wow fadeInUp" data-wow-delay=".6s">
                             <div class="course-image">
-                                <a href="course-details.html"><img src="assets/images/courses/courses-6.jpg"
+                                <a href="course-details.html"><img src="{{url('images/courses/courses-6.jpg')}}"
                                         alt="#"></a>
-                                <p class="price">$250</p>
+                                <!-- <p class="price">$250</p> -->
                             </div>
                             <div class="content">
-                                <h3><a href="course-details.html">Medical Technology</a></h3>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    laborum.</p>
+                                <h3><a class="edit_a" href="course-details.html">Phần 6: Microsoft Excel</a></h3>
+                                <p class="edit_p">Microsoft Excel là một ứng dụng bảng tính thuộc bộ Microsoft Office, 
+                                    công dụng chính của nó là giúp người dùng tính toán nhanh và chính xác với 
+                                    số lượng dữ liệu lớn.</p>
                             </div>
-                            <div class="bottom-content">
+                            <!-- <div class="bottom-content">
                                 <ul class="review">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -226,7 +234,38 @@
                                     <i class="lni lni-tag"></i>
                                     <a href="javascript:void(0)">Medical</a>
                                 </span>
+                            </div> -->
+                        </div>
+                        <!-- End Single Course -->
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Start Single Course -->
+                        <div class="single-course wow fadeInUp" data-wow-delay=".4s">
+                            <div class="course-image">
+                                <a href="course-details.html"><img src="{{url('images/courses/courses-7.jpg')}}"
+                                        alt="#"></a>
+                                <!-- <p class="price">$200</p> -->
                             </div>
+                            <div class="content">
+                                <h3><a class="edit_a" href="course-details.html">Phần 7: Microsoft Powerpoint</a></h3>
+                                <p class="edit_p">Microsoft PowerPoint (gọi tắt là PowerPoint) là một phần mềm trình 
+                                    chiếu do Microsoft phát triển.</p>
+                            </div>
+                            <!-- <div class="bottom-content">
+                                <ul class="review">
+                                    <li><i class="lni lni-star-filled"></i></li>
+                                    <li><i class="lni lni-star-filled"></i></li>
+                                    <li><i class="lni lni-star-filled"></i></li>
+                                    <li><i class="lni lni-star-filled"></i></li>
+                                    <li><i class="lni lni-star-filled"></i></li>
+                                    <li>10 Reviews</li>
+                                </ul>
+                                <span class="tag">
+                                    <i class="lni lni-tag"></i>
+                                    <a href="javascript:void(0)">Business</a>
+                                </span>
+                            </div> -->
                         </div>
                         <!-- End Single Course -->
                     </div>
@@ -236,95 +275,9 @@
     </section>
     <!-- End Courses Area -->
 
-    <!-- Start Achivement Area -->
-    <section class="our-achievement section overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-12">
-                    <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                        <h3 class="counter"><span id="secondo1" class="countup" cup-end="500">500</span>+</h3>
-                        <h4>Happy Clients</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12">
-                    <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-                        <h3 class="counter"><span id="secondo2" class="countup" cup-end="70">70</span>+</h3>
-                        <h4>Online Courses</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12">
-                    <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                        <h3 class="counter"><span id="secondo3" class="countup" cup-end="100">100</span>%</h3>
-                        <h4>Satisfaction</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12">
-                    <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                        <h3 class="counter"><span id="secondo3" class="countup" cup-end="100">100%</span>%</h3>
-                        <h4>Support</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Achivement Area -->
+   
 
-    <!-- Start Newsletter Area -->
-    <section class="newsletter-area section">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
-                    <div class="newsletter-title">
-                        <span>Sign Up for</span>
-                        <h2>The Newsletter</h2>
-                        <p>Subscribe to us to always stay in touch with us and get the latest news<br>
-                            about our company and all of our activities!</p>
-                    </div>
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-text wow fadeInUp" data-wow-delay=".2s">
-                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                            <input name="EMAIL" placeholder="Your email address" class="common-input"
-                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-                                required="" type="email">
-                            <div class="button">
-                                <button class="btn">Subscribe Now!</button>
-                            </div>
-                        </form>
-                        <ul class="newsletter-social">
-                            <li><a href="javascript:void(0)"><i class="lni lni-facebook-original"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- End Newsletter Form -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /End Newsletter Area -->
-
-    <!-- Start Call To Action Area -->
-    <section class="call-action section overlay">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="call-content">
-                        <span>EduGrids Free Lite Version</span>
-                        <h2>Currently you are using free <br>Lite
-                            Version of EduGrids</h2>
-                        <p>Please, purchase full version of the template to get all pages,<br>
-                            features and commercial license</p>
-                        <div class="button">
-                            <a href="javascript:void(0)" class="btn">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /End Call To Action Area -->
+    
 
     <!-- Start Clients Area -->
     <div class="client-logo-section">
