@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+// use App\Http\Controllers\MucTieuController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -27,5 +29,8 @@ Route::prefix('v1')->group(function(){
 Route::prefix('v2')->group(function(){
     Route::resource('customer','App\Http\Controllers\Api\v2\CustomerController')->only(['show']);
 });
+
+// Route::get('/muc-tieu','MucTieuController@MucTieu');
+
 
 

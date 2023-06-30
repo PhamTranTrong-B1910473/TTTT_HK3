@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KhaosatController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MucTieuController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +19,9 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/muc-tieu',[MucTieuController::class,'MucTieu']); //pages muc tieu
+
 Route::get('/',[HomeController::class,'index']);
 Route::get('/bai-viet/{id}',[KhaosatController::class,'show']);
 

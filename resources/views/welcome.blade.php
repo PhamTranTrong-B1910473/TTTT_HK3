@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -97,8 +97,8 @@
                         </button>
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="active" href="{{url('/')}}">Home</a></li>
-                                <li class="nav-item"><a href="javascript:void(0)">Mục Tiêu</a></li>
+                                <li class="nav-item"><a class=" "  href="{{url('/')}}">Home</a></li>
+                                
                                 <li class="nav-item">
                                     <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
                                         data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
@@ -108,6 +108,7 @@
                                         <li class="nav-item"><a href="about-us.html">About Us</a></li>
                                     </ul>
                                 </li>
+                                <li class="nav-item"><a  class="nav-link " href="{{url('/muc-tieu')}}">Mục Tiêu</a></li>
                                 <li class="nav-item"><a href="javascript:void(0)">Trắc Nghiệm</a></li>
                                 <li class="nav-item">
                                     <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
@@ -321,4 +322,4 @@
     </script>
 </body>
 
-</html>
+</html>`
