@@ -7,7 +7,7 @@
     <title>Khoa Khoa Học Cơ Bản - CTUMP</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{url('images/logo/favicon.png')}}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('images/logo/favicon.ico')}}" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- Web Font -->
@@ -98,7 +98,7 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ms-auto">
                                 <li class="nav-item"><a class="active" href="{{url('/')}}">Home</a></li>
-								<li class="nav-item"><a class="active" href="">Mục Tiêu</a></li>
+                                <li class="nav-item"><a href="javascript:void(0)">Mục Tiêu</a></li>
                                 <li class="nav-item">
                                     <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
                                         data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
@@ -131,12 +131,12 @@
                                 </li>
                                 <li class="nav-item"><a href="http://www.ctump.edu.vn/"  ><span>CTUMP</span></a></li>
                             </ul>
-                            <form class="d-flex search-form">
+                            <!-- <form class="d-flex search-form">
                                 <input class="form-control me-2" type="search" placeholder="Search..."
                                     aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit"><i
                                         class="lni lni-search-alt"></i></button>
-                            </form>
+                            </form> -->
                         </div> <!-- navbar collapse -->
                     </nav> <!-- navbar -->
                 </div>
@@ -150,8 +150,8 @@
     
     @yield('content')
 
-    <!-- Start Footer Area -->
-    <footer class="footer">
+ <!-- Start Footer Area -->
+ <footer class="footer">
         <!-- Start Middle Top -->
         <div class="footer-middle">
             <div class="container">
@@ -160,16 +160,17 @@
                         <!-- Single Widget -->
                         <div class="f-about single-footer">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Logo"></a>
+                                <a href="index.html"><img src="{{url('images/logo/banner_left.png')}}" alt="Logo"></a>
                             </div>
-                            <p>Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequ magni dolores eos qui ratione.</p>
+                            <p>Muốn đi nhanh hãy đi một mình muốn đi xa hãy đi cùng nhau</p>
+                            <p>Khi bạn lười thì người khác đang nổ lực</p>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
+                                    <li><a href="https://www.facebook.com/dhydct.ctump.edu.vn"><i class="lni lni-facebook-original"></i></a></li>
+                                    <!-- <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li> -->
+                                    <!-- <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li> -->
+                                    <li><a href="https://www.youtube.com/truongdaihocyduocct"><i class="lni lni-youtube"></i></a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -178,17 +179,18 @@
                     <div class="col-lg-3 col-md-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer sm-custom-border recent-blog">
-                            <h3>Latest News</h3>
+                            <h3>Tin Mới Nhất</h3>
                             <ul>
                                 <li>
-                                    <a href="blog-single-sidebar.html"><img src="assets/images/blog/footer-news1.jpg" alt="#">
-                                        Top 10 books you Must read in 2023
+                                    <a href="blog-single-sidebar.html"><img src="{{url('images/blog/footer-news1.jpg')}}" alt="#">
+                                        Top 10 cuốn sách học tin học văn phòng 
                                     </a>
                                     <span class="date"><i class="lni lni-calendar"></i>July 15, 2023</span>
                                 </li>
                                 <li>
-                                    <a href="blog-single-sidebar.html"><img src="assets/images/blog/footer-news2.jpg" alt="#">
-                                        How to Improve Your Communication Skill
+                                    <a href="https://www.youtube.com/playlist?list=PLOaJumKVh8BNmQC9YnGbSCpQ7bChfYFDW"><img src="{{url('images/blog/footer-news2.jpg')}}" alt="#">
+                                        Cải Thiện Kiến Thức Tin Học Của Bạn
+
                                     </a>
                                     <span class="date"><i class="lni lni-calendar"></i>July 1, 2023</span>
                                 </li>
@@ -199,13 +201,15 @@
                     <div class="col-lg-3 col-md-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer sm-custom-border f-link">
-                            <h3>Course List</h3>
+                            <h3>Khoá Học</h3>
                             <ul>
-                                <li><a href="javascript:void(0)">Advance Javascript – ES6</a></li>
-                                <li><a href="javascript:void(0)">WordPress for Intermediate</a></li>
-                                <li><a href="javascript:void(0)">iOS App Development</a></li>
-                                <li><a href="javascript:void(0)">Wbsite Development</a></li>
-                                <li><a href="javascript:void(0)">Android App Development</a></li>
+                                <li><a href="javascript:void(0)">Hệ Thống Thông Tin</a></li>
+                                <li><a href="javascript:void(0)">Cấu Trúc Tổng Quan Hệ Thống MT</a></li>
+                                <li><a href="javascript:void(0)">Hệ Điều Hành Windows</a></li>
+                                <li><a href="javascript:void(0)">Internet</a></li>
+                                <li><a href="javascript:void(0)">Microsoft Word</a></li>
+                                <li><a href="javascript:void(0)">Microsoft Excel</a></li>
+                                <li><a href="javascript:void(0)">Microsoft Powerpoint</a></li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->
@@ -213,16 +217,18 @@
                     <div class="col-lg-3 col-md-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer footer-newsletter">
-                            <h3>Newsletter</h3>
-                            <p>Subscribe to us to always stay in touch with us and get the latest news.</p>
-                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-form">
-                                <input name="EMAIL" placeholder="Your email address" class="common-input"
+                            <h3>Bản Tin</h3>
+                            <p>Theo dõi bộ môn Tin Học trên các kênh truyền thông để cập nhật tin tức mới nhất</p>
+                    </br>
+                           <p> "Tin học - Khám phá sức mạnh số hóa, tạo nên tương lai sáng tạo."</p>
+                            <!-- <form action="mail/mail.php" method="get" target="_blank" class="newsletter-form">
+                                <input name="EMAIL" placeholder="Địa chỉ email của bạn" class="common-input"
                                     onfocus="this.placeholder = ''"
                                     onblur="this.placeholder = 'Your email address'" required="" type="email">
                                 <div class="button">
-                                    <button class="btn">Subscribe Now!</button>
+                                    <button class="btn">Đăng kí ngay</button>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                         <!-- End Single Widget -->
                     </div>
@@ -237,7 +243,6 @@
 						<div class="row">
 							<div class="col-12">
 								<div>
-								
 									<p><i class="fa-sharp fa-regular fa-location-dot"></i> Số 179, đường Nguyễn Văn Cừ, P. An Khánh, Q. Ninh Kiều, TP. Cần Thơ</p>
 								</div>
 								<div>
