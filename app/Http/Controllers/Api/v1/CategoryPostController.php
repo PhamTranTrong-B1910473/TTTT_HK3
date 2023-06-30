@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Models\CategoryPost;
 use Illuminate\Http\Request;
-
+use Session;
 class CategoryPostController extends Controller
 {
     /**
@@ -14,7 +14,8 @@ class CategoryPostController extends Controller
      */
     public function index()
     {
-        //
+        $category = CategoryPost::all();
+        return view('layouts.category.index')->with(compact('category'));
     }
 
     /**
@@ -24,7 +25,7 @@ class CategoryPostController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts.category.create');
     }
 
     /**
@@ -35,7 +36,10 @@ class CategoryPostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $category = new CategoryPost();
+        $category->title = $request->title;
+        $category->save();
+        return redirect()->route('category.index')->with('success','Thêm danh mục bài giảng thành công!!');
     }
 
     /**
@@ -55,9 +59,11 @@ class CategoryPostController extends Controller
      * @param  \App\Models\CategoryPost  $categoryPost
      * @return \Illuminate\Http\Response
      */
-    public function edit(CategoryPost $categoryPost)
+    public function edit( $categoryPost)
     {
-        //
+        $category = CategoryPost::find($categoryPost);
+        return view('layouts.category.show')->with(compact('category'));
+        
     }
 
     /**
@@ -67,9 +73,13 @@ class CategoryPostController extends Controller
      * @param  \App\Models\CategoryPost  $categoryPost
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CategoryPost $categoryPost)
+    public function update(Request $request, $categoryPost)
     {
-        //
+        $data = $request->all();
+        $category = CategoryPost::find($categoryPost);
+        $category->title = $data['title'];
+        $category->save();
+        return redirect()->route('category.index')->with('success','Cập nhật danh mục bài giảng thành công!!');
     }
 
     /**
@@ -78,8 +88,10 @@ class CategoryPostController extends Controller
      * @param  \App\Models\CategoryPost  $categoryPost
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CategoryPost $categoryPost)
+    public function destroy($categoryPost)
     {
-        //
+        $category = CategoryPost::find($categoryPost);
+        $category->delete();
+        return redirect()->back()->with('success','Xóa danh mục bài giảng thành công!!');
     }
 }
