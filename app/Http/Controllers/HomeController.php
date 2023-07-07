@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\CategoryPost;
+use App\Models\Post;
 
 class HomeController extends Controller
 {
@@ -13,7 +15,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.main');
+        $category = CategoryPost::all();
+        return view('pages.main')->with(compact('category'));
     }
 
     /**

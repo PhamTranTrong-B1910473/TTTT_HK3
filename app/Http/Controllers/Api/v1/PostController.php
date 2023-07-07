@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Models\Post;
+use App\Models\CategoryPost;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -14,7 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $post = Post::with('category')->orderBy('id','DESC')->get();
+        return view('layouts.baigiang.index')->with(compact('post'));
     }
 
     /**
@@ -24,7 +26,9 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        $category = CategoryPost::all();
+        return view('layouts.baigiang.create')->with(compact('category'));
+        // return view('layouts.baigiang.create');
     }
 
     /**
@@ -35,7 +39,21 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'title' => 'required|max:255',
+            'noidung' => 'required',
+            'category_id' => 'required', 
+        ]);
+
+        $post = new Post();
+        $post->title = $data['title'];
+        $post->noidung = $data['noidung'];
+        $post->category_id = $data['category_id'];
+        
+        $post->save();
+       
+        return redirect()->route('post.index')->with('success','Thêm bài giảng thành công!!');
+
     }
 
     /**
@@ -55,9 +73,11 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit($post)
     {
-        //
+        $post = Post::find($post);
+        $category = CategoryPost::all();
+        return view('layouts.baigiang.show')->with(compact('category','post'));
     }
 
     /**
@@ -67,9 +87,22 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $post)
     {
-        //
+        $data = $request->validate([
+            'title' => 'required|max:255',
+            'noidung' => 'required',
+            'category_id' => 'required', 
+        ]);
+
+        $post = Post::find($post);
+        $post->title = $data['title'];
+        $post->noidung = $data['noidung'];
+        $post->category_id = $data['category_id'];
+        
+        $post->save();
+       
+        return redirect()->route('post.index')->with('success','Cập nhật bài giảng thành công!!');
     }
 
     /**
@@ -78,8 +111,10 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy($post)
     {
-        //
+        $post = Post::find($post);
+        $post->delete();
+        return redirect()->back()->with('success','Xóa bài giảng thành công!!');
     }
 }
