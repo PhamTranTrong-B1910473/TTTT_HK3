@@ -25,6 +25,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::prefix('v1')->group(function(){
     Route::resource('customer','App\Http\Controllers\Api\v1\CustomerController')->except(['edit','create']);
     Route::resource('category','App\Http\Controllers\Api\v1\CategoryPostController');
+    Route::resource('post','App\Http\Controllers\Api\v1\PostController');
+    Route::resource('bai-giang','App\Http\Controllers\Api\v1\BaigiangController');
+    Route::resource('danh-muc','App\Http\Controllers\Api\v1\DanhmucController');
+
 });
 Route::prefix('v2')->group(function(){
     Route::resource('customer','App\Http\Controllers\Api\v2\CustomerController')->only(['show']);

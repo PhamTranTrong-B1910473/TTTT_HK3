@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\CategoryPost;
+use App\Models\Post;
 
 class KhaosatController extends Controller
 {
@@ -45,7 +47,8 @@ class KhaosatController extends Controller
      */
     public function show($id)
     {
-        return view('pages.baiviet');
+        $category = CategoryPost::all();
+        return view('pages.baiviet')->with(compact('category'));
     }
 
     /**

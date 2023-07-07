@@ -28,6 +28,14 @@
                                     
                                 </ul>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Bài giảng</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{route('post.create')}}">Thêm bài giảng</a></li>
+                                    <li><a class="dropdown-item" href="{{route('post.index')}}">Liệt kê bài giảng</a></li>
+                                    
+                                </ul>
+                            </li>
                             </ul>
                         </div>
                     </nav>

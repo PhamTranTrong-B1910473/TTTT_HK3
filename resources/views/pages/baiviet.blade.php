@@ -1,63 +1,54 @@
 @extends('welcome')
 @section('content')
-<form>
-  <fieldset disabled>
-    <legend>KHẢO SÁT TRẮC NGHIỆM DÀNH CHO SINH VIÊN</legend>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Name</label>
-    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-    <div class="mb-3">
-      <label for="disabledSelect" class="form-label">Chọn chương: </label>
-      <select id="disabledSelect" class="form-select">
-        <option>Disabled select</option>
-      </select>
+
+
+<div class="mb-3">
+<h3 style="font-size: 30px;
+    text-align: center;
+    color: blue;
+    vertical-align: text-bottom;
+    margin-top: 5%;
+    margin-bottom: 5%;">Bạn có câu hỏi hay muốn đóng góp cho bộ môn </h3>
+
+  <label for="exampleFormControlTextarea" class="form-label">Nhập câu hỏi</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput" class="form-label">Nhập câu trả lời 1</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput" class="form-label">Nhập câu trả lời 2</label>
+  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput" class="form-label">Nhập câu trả lời 3</label>
+  <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput" class="form-label">Nhập câu trả lời 4</label>
+  <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput" class="form-label">Nhập câu trả lời đúng</label>
+  <input type="email" class="form-control" id="exampleFormControlInput5" placeholder="">
+</div>
+<div class="form-row text-center">
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Gửi</button>
     </div>
-    <div>
-      <p>Câu hỏi?</p>
-    </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-        <label class="form-check-label" for="disabledFieldsetCheck">
-          A
-        </label>
-      </div>
-    </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-        <label class="form-check-label" for="disabledFieldsetCheck">
-          B
-        </label>
-      </div>
-    </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-        <label class="form-check-label" for="disabledFieldsetCheck">
-          C
-        </label>
-      </div>
-    </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-        <label class="form-check-label" for="disabledFieldsetCheck">
-          D
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </fieldset>
-</form>
+ </div>
+</br>
+<style>
+  .form-label{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .form-control{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+</style>
+
 @endsection

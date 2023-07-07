@@ -71,8 +71,8 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="toolbar-login">
                             <div class="button">
-                                <a href="registration.html">Tạo Tài Khoản</a>
-                                <a href="login.html" class="btn">Đăng Nhập</a>
+                                <a href="{{ route('register') }}">Tạo Tài Khoản</a>
+                                <a href="{{ route('login') }}" class="btn">Đăng Nhập</a>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,9 @@
                                         aria-controls="navbarSupportedContent" aria-expanded="false"
                                         aria-label="Toggle navigation">Bài Giảng</a>
                                     <ul class="sub-menu collapse" id="submenu-1-4">
-                                        <li class="nav-item"><a href="about-us.html">About Us</a></li>
+                                        @foreach($category as $key => $cate)
+                                        <li class="nav-item"><a href="{{route('danh-muc.show',['danh_muc' => $cate->id])}}">{{$cate->title}}</a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a  class="nav-link " href="{{url('/muc-tieu')}}">Mục Tiêu</a></li>
@@ -147,7 +149,7 @@
     </header>
     <!-- End Header Area -->
 
-	@include('pages.slide')
+	
     
     @yield('content')
 
@@ -324,6 +326,8 @@
             'autoplayVideos': true,
         });
     </script>
+
+    
 </body>
 
 </html>`
