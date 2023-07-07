@@ -1,4 +1,4 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -109,7 +109,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a  class="nav-link " href="{{url('/muc-tieu')}}">Mục Tiêu</a></li>
-                                <li class="nav-item"><a href="javascript:void(0)">Trắc Nghiệm</a></li>
+                                <li class="nav-item"><a href="{{url('/trac-nghiem')}}">Trắc Nghiệm</a></li>
                                 <li class="nav-item">
                                     <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
                                         data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
@@ -221,7 +221,11 @@
                             <h3>Bản Tin</h3>
                             <p>Theo dõi bộ môn Tin Học trên các kênh truyền thông để cập nhật tin tức mới nhất</p>
                     </br>
-                           <p> "Tin học - Khám phá sức mạnh số hóa, tạo nên tương lai sáng tạo."</p>
+                           <p> Tin học - Khám phá sức mạnh số hóa, tạo nên tương lai sáng tạo.</p>
+
+                           </br>
+                           <p> Vươn tới tương lai: Sức mạnh Tri thức qua Tin học!</p>
+                           
                             <!-- <form action="mail/mail.php" method="get" target="_blank" class="newsletter-form">
                                 <input name="EMAIL" placeholder="Địa chỉ email của bạn" class="common-input"
                                     onfocus="this.placeholder = ''"

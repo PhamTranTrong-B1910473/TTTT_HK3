@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KhaosatController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MucTieuController;
+use App\Http\Controllers\TracNghiemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/muc-tieu',[MucTieuController::class,'MucTieu']); //pages muc tieu
+Route::get('/trac-nghiem',[TracNghiemController::class,'TracNghiem']); //pages muc tieu
 
 Route::get('/',[HomeController::class,'index']);
 Route::get('/bai-viet/{id}',[KhaosatController::class,'show']);
