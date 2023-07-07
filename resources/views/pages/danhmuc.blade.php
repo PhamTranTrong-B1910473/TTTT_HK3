@@ -38,7 +38,16 @@
 			
 		</div>
 </div>
-
+@foreach($category_post as $key => $p)
+					<ul style="list-style-type: decimal; padding: 7px 15px; font-size: 13px;">
+                        			
+						<li style="border-bottom: 1px solid #006bba; padding-bottom: 7px;padding-top: 12px;">
+							<a href="">{{$p->title}}</a>
+						</li>
+												
+					</ul>
+                    <p>{!!$p->noidung!!}</p>
+                @endforeach
 
 
 

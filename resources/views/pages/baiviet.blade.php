@@ -7,12 +7,18 @@
     text-align: center;
     color: blue;
     vertical-align: text-bottom;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 5%;">Bạn có câu hỏi hay muốn đóng góp cho bộ môn </h3>
+<div class="mb-3">
+  <label for="exampleFormControlInput" class="form-label">Nhập MSSV</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+</div>
 
   <label for="exampleFormControlTextarea" class="form-label">Nhập câu hỏi</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
+
+
 <div class="mb-3">
   <label for="exampleFormControlInput" class="form-label">Nhập câu trả lời 1</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
@@ -41,12 +47,15 @@
 </br>
 <style>
   .form-label{
-    width: 80%;
-    margin-left: 10%;
+    color:#212529;
+    font-weight:bold;
+    font-size:15px;
+    width: 60%;
+    margin-left: 20%;
   }
   .form-control{
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
   }
 
 </style>
